@@ -3,5 +3,10 @@ spring:
     name: department-service
   config:
     import: "configserver:http://localhost:8088"
+  cloud:
+      config:
+          server:
+              git:
+               default-label: main
 
 
